@@ -31,7 +31,7 @@ env:
 jobs:
   macos_cache:
     name: Seed MacOS dependencies
-    runs-on: "macos-latest"
+    runs-on: "big-sur"
     timeout-minutes: 720
     if: ${{ !contains(github.event.head_commit.message, 'ci_run_') || contains(github.event.head_commit.message, 'ci_run_mac') }}
     outputs:
