@@ -242,7 +242,7 @@ jobs:
     # and the jobs appear to be pretty reliable so far.
     name: MacOS ${{ matrix.build.BLD_CONFIG }}
     needs: macos_cache
-    runs-on: "macos-latest"
+    runs-on: "big-sur"
     timeout-minutes: 720
     strategy:
       fail-fast: false
